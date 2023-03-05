@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace TokenifyX.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("")]
 public class WeatherForecastController : ControllerBase
 {
     [HttpPost("/webhook")]
