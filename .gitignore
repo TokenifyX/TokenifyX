@@ -1,5 +1,5 @@
-.appsettings.json
-.appsettings.Development.json
+*.appsettings.json
+*.appsettings.Development.json
 
 .TokenifyX/.appsettings.json
 # globs
