@@ -3,22 +3,20 @@ using Microsoft.AspNetCore.Mvc;
 namespace TokenifyX.Controllers;
 
 [ApiController]
-[Route("")]
+[Route("[controller]")]
 public class WeatherForecastController : ControllerBase
 {
-    [HttpGet("/webhook")]
+    [HttpPost("/webhook")]
     public async Task<ActionResult<string>> Webhook()
     {
         var webResponse = Request.Body;
-        Console.WriteLine(webResponse);
         return Ok(webResponse);
     }
     
-    [HttpPost("/webhook")]
-    public async Task<ActionResult<string>> Webhook2ND()
+    [HttpGet("/wbhook")]
+    public async Task<ActionResult<string>> Webhook2d()
     {
         var webResponse = Request.Body;
-        Console.WriteLine(webResponse);
         return Ok(webResponse);
     }
 }
