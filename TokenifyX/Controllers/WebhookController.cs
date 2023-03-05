@@ -10,6 +10,7 @@ public class WebhookController : ControllerBase
     public async Task<ActionResult<string>> Webhook()
     {
         var webResponse = Request.Body;
+        Console.WriteLine(webResponse);
         return Ok(webResponse);
     }
     
@@ -17,6 +18,7 @@ public class WebhookController : ControllerBase
     public async Task<ActionResult<string>> Webhook2d()
     {
         var webResponse = Request.Body;
+        Console.WriteLine(webResponse);
         return Ok(webResponse);
     }
 }
