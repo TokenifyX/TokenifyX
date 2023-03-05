@@ -4,7 +4,7 @@ namespace TokenifyX.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-public class WeatherForecastController : ControllerBase
+public class WebhookController : ControllerBase
 {
     [HttpPost("/webhook")]
     public async Task<ActionResult<string>> Webhook()
